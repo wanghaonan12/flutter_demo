@@ -27,3 +27,7 @@ flutter:
     - images/爱心.jpg
     - images/Android_Studio.png
     - images/
+  fonts:
+    - family: iconfont
+      fonts:
+        - asset: images/iconfont.ttf

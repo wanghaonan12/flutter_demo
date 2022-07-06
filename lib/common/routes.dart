@@ -31,6 +31,10 @@ import 'package:flutter_demo/widget/stateless/RadioListTileWidget.dart';
 import 'package:flutter_demo/widget/stateless/SwitchListTile.dart';
 import 'package:flutter_demo/widget/stateless/CheckboxListTileWidget.dart';
 import 'package:flutter_demo/widget/stateless/ListTileWidget.dart';
+import 'package:flutter_demo/widget/stateless/CupertinoWidget.dart';
+import 'package:flutter_demo/widget/stateless/DividerWidget.dart';
+import 'package:flutter_demo/widget/stateless/IconWidget.dart';
+import 'package:flutter_demo/widget/stateless/MyPreferredSizeWidget.dart';
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
   // 无状态组件导航
@@ -68,4 +72,8 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/switchList':(context)=>const SwitchListTitleWidget(),
   '/checkboxList':(context)=>const CheckboxListTitleWidget(),
   '/listTitle':(context)=>const ListTitleWidget(),
+  '/cupertino':(context)=>const CupertinoWidget(),
+  '/divider':(context)=>const DividerWidget(),
+  '/icon':(context)=>const IconWidget(),
+  '/preferred':(context)=>const MyPreferredSizeWidget(),
 };
