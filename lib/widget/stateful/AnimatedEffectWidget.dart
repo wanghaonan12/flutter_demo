@@ -524,6 +524,7 @@ class ChildContent extends StatelessWidget {
             .of(context)
             .textTheme
             .headline1,
+
       ),
     );
   }
