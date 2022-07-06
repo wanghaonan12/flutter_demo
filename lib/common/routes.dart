@@ -35,6 +35,11 @@ import 'package:flutter_demo/widget/stateless/CupertinoWidget.dart';
 import 'package:flutter_demo/widget/stateless/DividerWidget.dart';
 import 'package:flutter_demo/widget/stateless/IconWidget.dart';
 import 'package:flutter_demo/widget/stateless/MyPreferredSizeWidget.dart';
+import 'package:flutter_demo/widget/stateful/AnimatedBuilderWidget.dart';
+import 'package:flutter_demo/widget/stateful/AnimatedContainerWidget.dart';
+import 'package:flutter_demo/widget/stateful/AnimatedEffectWidget.dart';
+import 'package:flutter_demo/widget/stateful/AnimatedListWidget.dart';
+import 'package:flutter_demo/widget/stateful/AnimatedSwitcherWidget.dart';
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
   // 无状态组件导航
@@ -76,4 +81,9 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/divider':(context)=>const DividerWidget(),
   '/icon':(context)=>const IconWidget(),
   '/preferred':(context)=>const MyPreferredSizeWidget(),
+  '/animatedContainer':(context)=>const AnimatedContainerWidget(),
+  '/animatedBuilder':(context)=>const AnimatedBuilderWidget(),
+  '/animatedEffect':(context)=>const AnimatedEffectWidget(),
+  '/animatedList':(context)=>const AnimatedListWidget(),
+  '/animatedSwitcher':(context)=>const AnimatedSwitcherWidget(),
 };

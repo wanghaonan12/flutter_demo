@@ -94,7 +94,8 @@ class CupertinoWidget extends StatelessWidget {
                     gradient: RadialGradient(
                         radius: 1.8,
                         stops: stops,
-                        colors: rainbow.map((e) => Color(e)).toList())),
+                        colors: rainbow.map((e) => Color(e)).toList()),
+                ),
                 padding: const EdgeInsets.all(10),
                 child: Wrap(
                   spacing: 10,
@@ -103,20 +104,6 @@ class CupertinoWidget extends StatelessWidget {
                     _buildCupertinoPopupSurFace(true),
                   ],
                 ),
-              ),
-              ElevatedButton(
-                  onPressed: () {
-                    showDialog(
-                        context: context,
-                        builder: (context) =>
-                            _buildCupertinoAlertDialog(context));
-                  },
-                  child: const Text(
-                    '点击弹出CupertinoPopupSurFace',
-                    style: descStyle,
-                  )),
-              const SizedBox(
-                height: 10,
               ),
             ],
           ),
@@ -134,9 +121,11 @@ Widget _buildCupertinoAlertDialog(BuildContext context) {
       content: _buildContent(context),
       actions: [
         CupertinoButton(
-            child: const Text('Delete'), onPressed: () => Navigator.pop(context)),
+            child: const Text('Delete'),
+            onPressed: () => Navigator.pop(context)),
         CupertinoButton(
-            child: const Text('Cancel'), onPressed: () => Navigator.pop(context)),
+            child: const Text('Cancel'),
+            onPressed: () => Navigator.pop(context)),
       ],
     ),
   );
@@ -181,36 +170,36 @@ Widget _buildCupertinoActionSheet(BuildContext context) {
   return Container(
     alignment: Alignment.bottomCenter,
     child: CupertinoActionSheet(
-    //  第一行组件
+      //  第一行组件
       title: const Text(
         'Please choose a language!',
         style: titleStyle,
       ),
-    //  第二行组件
+      //  第二行组件
       message: const Text(
         'the language you use in this application ',
         style: descStyle,
       ),
       cancelButton: CupertinoActionSheetAction(
-        onPressed: ()=>Navigator.pop(context),
+        onPressed: () => Navigator.pop(context),
         child: const Text('Cancel'),
       ),
-    //  中间组件列表
+      //  中间组件列表
       actions: [
         CupertinoActionSheetAction(
-          onPressed: ()=>Navigator.pop(context),
+          onPressed: () => Navigator.pop(context),
           child: const Text('Java'),
         ),
         CupertinoActionSheetAction(
-          onPressed: ()=>Navigator.pop(context),
+          onPressed: () => Navigator.pop(context),
           child: const Text('Kotlin'),
         ),
         CupertinoActionSheetAction(
-          onPressed: ()=>Navigator.pop(context),
+          onPressed: () => Navigator.pop(context),
           child: const Text('Flutter'),
         ),
         CupertinoActionSheetAction(
-          onPressed: ()=>showAboutDialog(context: context),
+          onPressed: () => showAboutDialog(context: context),
           isDefaultAction: true,
           child: const Text('JavaSpring'),
         ),
@@ -219,14 +208,14 @@ Widget _buildCupertinoActionSheet(BuildContext context) {
   );
 }
 
-Widget _buildCupertinoPopupSurFace(bool isSurFacePainted){
+Widget _buildCupertinoPopupSurFace(bool isSurFacePainted) {
   return CupertinoPopupSurface(
-  //  是否绘白
+    //  是否绘白
     isSurfacePainted: isSurFacePainted,
     child: Container(
       width: 150,
       height: 100,
-      color: Colors.white.withOpacity(0.3),
+      color: Colors.blue.withOpacity(0.3),
       alignment: Alignment.center,
     ),
   );

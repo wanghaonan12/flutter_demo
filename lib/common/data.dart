@@ -92,5 +92,13 @@ final statefulList = <ContainerInfo>[
   ContainerInfo(
       'Image', '用于显示一张图片,可以从文件、内存、网络、资源里加载,可以指定适应方式、样式、颜色混合模式、重复模式。', '/image'),
   ContainerInfo(
-      'SliverAppBar', 'SliverAppBar组件可以实现页面头部区域展开、折叠的效果。', '/sliverappbar'),
+      '动画容器', 'SliverAppBar组件可以实现页面头部区域展开、折叠的效果。', '/animatedContainer'),
+  ContainerInfo(
+      '动画构造器', 'SliverAppBar组件可以实现页面头部区域展开、折叠的效果。', '/animatedBuilder'),
+  ContainerInfo(
+      '动画改变外观属性', 'SliverAppBar组件可以实现页面头部区域展开、折叠的效果。', '/animatedEffect'),
+  ContainerInfo(
+      '动画列表', 'SliverAppBar组件可以实现页面头部区域展开、折叠的效果。', '/animatedList'),
+  ContainerInfo(
+      '其他动画效果', 'SliverAppBar组件可以实现页面头部区域展开、折叠的效果。', '/animatedSwitcher'),
 ];

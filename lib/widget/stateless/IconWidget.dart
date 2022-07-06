@@ -116,7 +116,6 @@ class _TestState extends State<Test> with TickerProviderStateMixin {
           animationController.reverse();
         }else if (status==AnimationStatus.dismissed) {
           animationController.forward();
-
         }
       });
     animationController.forward();

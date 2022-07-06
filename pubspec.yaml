@@ -19,13 +19,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - images/avatar.png
-    - images/banner.jpg
-    - images/plant1.jpg
-    - images/plant2.jpg
-    - images/plant3.jpg
-    - images/爱心.jpg
-    - images/Android_Studio.png
     - images/
   fonts:
     - family: iconfont

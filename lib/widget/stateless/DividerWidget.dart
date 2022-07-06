@@ -64,10 +64,12 @@ class DividerWidget extends StatelessWidget {
                 style: descStyle,
               ),
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(vertical: 10),
+            SizedBox(
+              height: 200,
               child: Row(
-                children: dataColor.map((e) => Divider(
+                mainAxisSize: MainAxisSize.max,
+                children: dataColor
+                    .map((e) => VerticalDivider(
                   //分割线颜色
                   color: e,
                   //前面孔雀长度
@@ -75,7 +77,7 @@ class DividerWidget extends StatelessWidget {
                   //后面空缺长度
                   endIndent: data[e]!*2,
                   //展位高度
-                  height: data[e],
+                  width: data[e],
                   //分割线的粗细
                   thickness: data[e]!/2,
                 )).toList(),

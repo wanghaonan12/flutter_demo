@@ -55,7 +55,7 @@ class MyPreferredSizeWidget extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 10),
                 child: const Text(
-                  '姆博曾，防止用户与背后的widget交互，可以通过dismissible来决定奠基石，是否出发返回。',
+                  '，防止用户与背后的widget交互，可以通过dismissible来决定奠基石，是否出发返回。',
                   style: descStyle,
                 ),
               ),
