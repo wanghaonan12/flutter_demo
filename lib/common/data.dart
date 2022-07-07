@@ -101,4 +101,17 @@ final statefulList = <ContainerInfo>[
       '动画列表', 'SliverAppBar组件可以实现页面头部区域展开、折叠的效果。', '/animatedList'),
   ContainerInfo(
       '其他动画效果', 'SliverAppBar组件可以实现页面头部区域展开、折叠的效果。', '/animatedSwitcher'),
+  ContainerInfo(
+      'futureBuilder', '可以指定一个Future对象，能够监听异步执行的状态，并在构造器中根据状态构建不同的界面。', '/futureBuilder'),
+  ContainerInfo(
+      'hero', '可指定标签名，两个姐买你跳转时具有相同标签的组件会进行共享动画。一个界面中不能存在两个同名的Hero标签。', '/hero'),
+  ContainerInfo(
+      'material', 'material风格组件的核心，可指定颜色，影身，类型，阴影颜色，形状等属性。', '/material'),
+  ContainerInfo(
+      'materialApp', 'Material 应用的顶级组件，包含路由生成器，肢体，语言主页等属性', '/materialApp'),
+  ContainerInfo(
+      'transitionEffect', '各种变化效果', '/transitionEffect'),
+  ContainerInfo(
+      'willPopScope', '当一个界面中有WillPopScope组件是，在页面返回时出发回调，决定是否返回，可用于二次确认退出。', '/willPopScope'),
+
 ];

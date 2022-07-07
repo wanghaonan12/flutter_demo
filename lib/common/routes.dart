@@ -40,6 +40,13 @@ import 'package:flutter_demo/widget/stateful/AnimatedContainerWidget.dart';
 import 'package:flutter_demo/widget/stateful/AnimatedEffectWidget.dart';
 import 'package:flutter_demo/widget/stateful/AnimatedListWidget.dart';
 import 'package:flutter_demo/widget/stateful/AnimatedSwitcherWidget.dart';
+import 'package:flutter_demo/widget/stateful/FutureBuilder.dart';
+import 'package:flutter_demo/widget/stateful/Hero.dart';
+import 'package:flutter_demo/widget/stateful/Material.dart';
+import 'package:flutter_demo/widget/stateful/MaterialApp.dart';
+import 'package:flutter_demo/widget/stateful/TransitionEffectWidget.dart';
+import 'package:flutter_demo/widget/stateful/WillPopScope.dart';
+
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
   // 无状态组件导航
@@ -86,4 +93,10 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/animatedEffect':(context)=>const AnimatedEffectWidget(),
   '/animatedList':(context)=>const AnimatedListWidget(),
   '/animatedSwitcher':(context)=>const AnimatedSwitcherWidget(),
+  '/futureBuilder':(context)=>const FutureBuilderWidget(),
+  '/hero':(context)=>const HeroWidget(),
+  '/material':(context)=>const MaterialWidget(),
+  '/materialApp':(context)=>const MaterialAppWidget(),
+  '/transitionEffect':(context)=>const TransitionEffectWidget(),
+  '/willPopScope':(context)=>const WillPopScopeWidget(),
 };

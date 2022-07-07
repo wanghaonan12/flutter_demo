@@ -18,7 +18,7 @@ class _AnimatedEffectWidgetState extends State<AnimatedEffectWidget> {
   late EdgeInsets _padding;
 
   // 对⻬动画参数
-  final Alignment start = const Alignment(0, 0);
+  final Alignment start = Alignment.topLeft;
   final Alignment end = Alignment.bottomRight;
   late Alignment _alignment;
 
@@ -260,7 +260,7 @@ class _AnimatedEffectWidgetState extends State<AnimatedEffectWidget> {
                     AnimatedPositioned(
                       duration: const Duration(seconds: 1),
                       top: _top,
-                      left: _top * 4,
+                      left: _top*4,
                       child: const Icon(
                         Icons.android,
                         color: Colors.green,
@@ -311,7 +311,7 @@ class _AnimatedEffectWidgetState extends State<AnimatedEffectWidget> {
                   curve: Curves.fastOutSlowIn,
                   alignment: const Alignment(0, 0),
                   child: Container(
-                    height: 40,
+                    height: _width/2.5,
                     width: _width,
                     alignment: Alignment.center,
                     color: Colors.blue,
@@ -471,9 +471,7 @@ class _AnimatedEffectWidgetState extends State<AnimatedEffectWidget> {
                     return GestureDetector(
                       onTap: () {
                         setState(() {
-                          _value =
-                          _value == Colors.red ? Colors.blue :
-                          Colors.red;
+                          _value = _value == Colors.red ? Colors.blue : Colors.red;
                         });
                       },
                       child: Container(

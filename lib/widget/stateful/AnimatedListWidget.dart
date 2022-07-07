@@ -62,7 +62,7 @@ class _AnimatedListWidgetState extends State<AnimatedListWidget> {
                   initialItemCount: animatedList.length,
                   // 调⽤不同的 _buildItem观察不同的动画效果
                   itemBuilder: (context, index, animation) =>
-                      _buildItem4(animatedList[index], index, animation),
+                      _buildItem3(animatedList[index], index, animation),
                 ),
               ),
             ],
