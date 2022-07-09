@@ -44,7 +44,7 @@ class _StepperWidgetState extends State<StepperWidget> {
               SizedBox(
                 height: MediaQuery.of(context).size.height,
                 child: Stepper(
-                    type: StepperType.horizontal,
+                    type: StepperType.vertical,
                     currentStep: _position,
                     onStepTapped: (index) {
                       setState(() {

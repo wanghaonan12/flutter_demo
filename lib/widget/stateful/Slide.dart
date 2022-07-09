@@ -51,7 +51,7 @@ class _SliderWidgetState extends State<SliderWidget> {
                     // 最⼤值
                     max: 360.0,
                     // 分段数
-                    divisions: 10,
+                    divisions: 360,
                     // 提示⽓泡⽂字
                     label: _value.toStringAsFixed(1),
                     // 激活颜⾊

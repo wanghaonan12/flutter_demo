@@ -36,7 +36,8 @@ class _SnackBarWidgetState extends State<SnackBarWidget> {
               ),
               ElevatedButton(
                 onPressed: () => {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
                     backgroundColor: Colors.indigo,
                     content: const Text(
                       'SnackBar',
@@ -44,6 +45,7 @@ class _SnackBarWidgetState extends State<SnackBarWidget> {
                     ),
                     duration: const Duration(seconds: 2),
                     action: SnackBarAction(
+                      textColor:Colors.white,
                       label: 'ACTION',
                       onPressed: () {
                         ScaffoldMessenger.of(context).hideCurrentSnackBar;

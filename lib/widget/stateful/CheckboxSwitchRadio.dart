@@ -13,6 +13,7 @@ class _CheckboxRadioWidgetState extends State<CheckboxRadioWidget> {
   final colors = [Colors.red, Colors.yellow, Colors.blue, Colors.green];
   var data = <double>[1, 2, 3, 4, 5];
   double _value = 1;
+  double count = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -77,8 +78,8 @@ class _CheckboxRadioWidgetState extends State<CheckboxRadioWidget> {
                         value: _checked,
                         inactiveThumbColor: e,
                         inactiveTrackColor: Colors.grey.withAlpha(77),
-                        activeColor: Colors.green,
-                        activeTrackColor: Colors.orange,
+                        activeColor: e,
+                        activeTrackColor: Colors.green,
                         // 状态改变事件
                         onChanged: (v) => setState(() => _checked = v),
                       ),
@@ -98,16 +99,25 @@ class _CheckboxRadioWidgetState extends State<CheckboxRadioWidget> {
                   style: descStyle,
                 ),
               ),
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: data
-                    .map((e) => Radio<double>(
-                        activeColor: Colors.orangeAccent,
-                        value: e,
-                        groupValue: _value,
-                        onChanged: (v) => setState(() => _value = v!)))
-                    .toList(),
-              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: data
+                        .map((e) => Radio<double>(
+                            activeColor: Colors.orangeAccent,
+                            value: e,
+                            groupValue: _value,
+                            onChanged: (v) => {
+                                  print(e),
+                                  setState(() => {count = e, _value = v!})
+                                }))
+                        .toList(),
+                  ),
+                   Text('$count',style: titleStyle,),
+                ],
+              )
             ],
           ),
         ),

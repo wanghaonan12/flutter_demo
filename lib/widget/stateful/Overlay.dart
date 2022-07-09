@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/style.dart';
 
-// ignore: must_be_immutable
 class OverlayWidget extends StatelessWidget {
   const OverlayWidget({Key? key}) : super(key: key);
 

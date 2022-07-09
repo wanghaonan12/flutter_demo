@@ -46,6 +46,13 @@ import 'package:flutter_demo/widget/stateful/Material.dart';
 import 'package:flutter_demo/widget/stateful/MaterialApp.dart';
 import 'package:flutter_demo/widget/stateful/TransitionEffectWidget.dart';
 import 'package:flutter_demo/widget/stateful/WillPopScope.dart';
+import 'package:flutter_demo/widget/stateful/CheckboxSwitchRadio.dart';
+import 'package:flutter_demo/widget/stateful/RangeSlider.dart';
+import 'package:flutter_demo/widget/stateful/Slide.dart';
+import 'package:flutter_demo/widget/stateful/SnackBar.dart';
+import 'package:flutter_demo/widget/stateful/Stepper.dart';
+import 'package:flutter_demo/widget/stateful/Overlay.dart';
+import 'package:flutter_demo/widget/stateful/RefreshIndicator.dart';
 
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
@@ -66,7 +73,7 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/theme': (context) => const ThemeWidget(),
   '/gesturedetector': (context) => const GestureDetectorWidget(),
   '/useraccountdrawerheader': (context) =>
-  const UserAccountDrawerHeaderWidget(),
+      const UserAccountDrawerHeaderWidget(),
   '/button': (context) => const ButtonWidget(),
   '/card': (context) => const CardWidget(),
   '/visiblity': (context) => const VisiblityWidget(),
@@ -76,27 +83,34 @@ Map<String, Widget Function(BuildContext)> routes = {
   // 示例导航
   '/plant-shop': (context) => const PlantShop(),
   '/timeline': (context) => const TimelinePage(),
-  '/alertDialog':(context)=>const AlertDialogWidget(),
-  '/SpacerWidefe':(context)=>const SpacerWidefe(),
-  '/aboutList':(context)=>const AboutListTileWidget(),
-  '/grid':(context)=>const GridTitleWidget(),
-  '/radioLIst':(context)=>const RadioLIstTitleWidget(),
-  '/switchList':(context)=>const SwitchListTitleWidget(),
-  '/checkboxList':(context)=>const CheckboxListTitleWidget(),
-  '/listTitle':(context)=>const ListTitleWidget(),
-  '/cupertino':(context)=>const CupertinoWidget(),
-  '/divider':(context)=>const DividerWidget(),
-  '/icon':(context)=>const IconWidget(),
-  '/preferred':(context)=>const MyPreferredSizeWidget(),
-  '/animatedContainer':(context)=>const AnimatedContainerWidget(),
-  '/animatedBuilder':(context)=>const AnimatedBuilderWidget(),
-  '/animatedEffect':(context)=>const AnimatedEffectWidget(),
-  '/animatedList':(context)=>const AnimatedListWidget(),
-  '/animatedSwitcher':(context)=>const AnimatedSwitcherWidget(),
-  '/futureBuilder':(context)=>const FutureBuilderWidget(),
-  '/hero':(context)=>const HeroWidget(),
-  '/material':(context)=>const MaterialWidget(),
-  '/materialApp':(context)=>const MaterialAppWidget(),
-  '/transitionEffect':(context)=>const TransitionEffectWidget(),
-  '/willPopScope':(context)=>const WillPopScopeWidget(),
+  '/alertDialog': (context) => const AlertDialogWidget(),
+  '/SpacerWidefe': (context) => const SpacerWidefe(),
+  '/aboutList': (context) => const AboutListTileWidget(),
+  '/grid': (context) => const GridTitleWidget(),
+  '/radioLIst': (context) => const RadioLIstTitleWidget(),
+  '/switchList': (context) => const SwitchListTitleWidget(),
+  '/checkboxList': (context) => const CheckboxListTitleWidget(),
+  '/listTitle': (context) => const ListTitleWidget(),
+  '/cupertino': (context) => const CupertinoWidget(),
+  '/divider': (context) => const DividerWidget(),
+  '/icon': (context) => const IconWidget(),
+  '/preferred': (context) => const MyPreferredSizeWidget(),
+  '/animatedContainer': (context) => const AnimatedContainerWidget(),
+  '/animatedBuilder': (context) => const AnimatedBuilderWidget(),
+  '/animatedEffect': (context) => const AnimatedEffectWidget(),
+  '/animatedList': (context) => const AnimatedListWidget(),
+  '/animatedSwitcher': (context) => const AnimatedSwitcherWidget(),
+  '/futureBuilder': (context) => const FutureBuilderWidget(),
+  '/hero': (context) => const HeroWidget(),
+  '/material': (context) => const MaterialWidget(),
+  '/materialApp': (context) => const MaterialAppWidget(),
+  '/transitionEffect': (context) => const TransitionEffectWidget(),
+  '/willPopScope': (context) => const WillPopScopeWidget(),
+  '/checkboxRadio': (context) => const CheckboxRadioWidget(),
+  '/rangeSlider': (context) => const RangeSliderWidget(),
+  '/slider': (context) => const SliderWidget(),
+  '/snackBar': (context) => const SnackBarWidget(),
+  '/stepper': (context) => const StepperWidget(),
+  '/overlay': (context) => const OverlayWidget(),
+  '/refreshIndicator': (context) => const RefreshIndicatorWidget(),
 };
