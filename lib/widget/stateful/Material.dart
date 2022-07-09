@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/style.dart';
 
 final shapMap = {
-  'BOrderDirectional': const BorderDirectional(
+  'BorderDirectional': const BorderDirectional(
       top: BorderSide(
         color: Colors.white,
       ),
@@ -21,7 +21,7 @@ final shapMap = {
     width: 2.0,
     color: Color(0xFFDFDFDF),
   )),
-  'RoundedRectangBorder': const RoundedRectangleBorder(
+  'RoundedRectangleBorder': const RoundedRectangleBorder(
       side: BorderSide(width: 1.0, color: Colors.blue),
       borderRadius: BorderRadius.all(
         Radius.circular(15),
@@ -69,18 +69,18 @@ class MaterialWidget extends StatelessWidget {
   }
 }
 
-Material _buildMaterial (String type)=>Material(
-  shadowColor: Colors.blue,
-  shape: shapMap[type],
-  color: Colors.orange,
-  elevation: 3,
-  textStyle: const TextStyle(color: Colors.white),
-  child: Container(
-    alignment: Alignment.center,
-    width: 300,
-    height: 60,
-    child: Text(
-      type,
-    ),
-  ),
-);
+Material _buildMaterial(String type) => Material(
+      shadowColor: Colors.blue,
+      shape: shapMap[type],
+      color: Colors.orange,
+      elevation: 3,
+      textStyle: const TextStyle(color: Colors.white),
+      child: Container(
+        alignment: Alignment.center,
+        width: 300,
+        height: 60,
+        child: Text(
+          type,
+        ),
+      ),
+    );
